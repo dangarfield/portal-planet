@@ -1,0 +1,60 @@
+<svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Portal Boost Card Visual -->
+  <defs>
+    <radialGradient id="boostBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#2196f3;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#64b5f6;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#1565c0;stop-opacity:0.4" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="150" fill="url(#boostBg)" rx="10" ry="10"/>
+  
+  <!-- Portal ring -->
+  <circle cx="100" cy="75" r="35" fill="none" stroke="#90caf9" stroke-width="4" opacity="0.8">
+    <animate attributeName="r" values="35;40;35" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-width" values="4;2;4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="75" r="25" fill="none" stroke="#bbdefb" stroke-width="2" opacity="0.9">
+    <animate attributeName="r" values="25;30;25" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Central portal energy -->
+  <circle cx="100" cy="75" r="15" fill="#42a5f5" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Stone emerging from portal -->
+  <circle cx="100" cy="75" r="5" fill="#4caf50" opacity="0.9">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="0,0;0,-20;0,-40" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0.5;0.1" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Portal energy particles -->
+  <g fill="#90caf9" opacity="0.8">
+    <circle cx="75" cy="50" r="2">
+      <animateTransform attributeName="transform" type="rotate" 
+                        values="0 100 75;360 100 75" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="125" cy="100" r="1.5">
+      <animateTransform attributeName="transform" type="rotate" 
+                        values="0 100 75;360 100 75" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="125" cy="50" r="1.8">
+      <animateTransform attributeName="transform" type="rotate" 
+                        values="0 100 75;-360 100 75" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="75" cy="100" r="1.2">
+      <animateTransform attributeName="transform" type="rotate" 
+                        values="0 100 75;-360 100 75" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Energy waves -->
+  <circle cx="100" cy="75" r="45" fill="none" stroke="#e3f2fd" stroke-width="1" opacity="0.5">
+    <animate attributeName="r" values="45;50;45" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+</svg>

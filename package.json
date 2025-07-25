@@ -1,0 +1,19 @@
+{
+  "name": "portal-game",
+  "version": "1.0.0",
+  "description": "A cooperative portal-based board game",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@thisbeyond/solid-dnd": "^0.7.5",
+    "solid-js": "^1.8.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "vite-plugin-solid": "^2.8.0"
+  }
+}

@@ -1,0 +1,83 @@
+<svg width="300" height="180" viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
+  <!-- Incorrect Portal-World Alignment (5 stones) -->
+  <defs>
+    <style>
+      @font-face {
+        font-family: 'ArcaneNine';
+        src: url('../icons/arcane-nine.otf') format('opentype');
+      }
+      .arcane-text {
+        font-family: 'ArcaneNine', Arial, sans-serif;
+      }
+    </style>
+  </defs>
+  
+  <!-- Portal Card (Left Side) -->
+  <g transform="translate(20, 20)">
+    <!-- Portal background -->
+    <rect width="100" height="140" fill="rgba(100, 150, 255, 0.3)" stroke="rgba(100, 150, 255, 0.6)" stroke-width="2" rx="8" ry="8"/>
+    <text x="50" y="15" text-anchor="middle" class="arcane-text" font-size="12" font-weight="bold" fill="white">PORTAL</text>
+    
+    <!-- Portal hexagon pattern (2,3,2) - only 5 stones filled -->
+    <!-- Top row: 2 hexes -->
+    <polygon points="37,45 45,41 53,45 53,53 45,57 37,53" fill="#f44336" stroke="white" stroke-width="1"/>
+    <polygon points="53,45 61,41 69,45 69,53 61,57 53,53" fill="#2196f3" stroke="white" stroke-width="1"/>
+    
+    <!-- Middle row: 3 hexes -->
+    <polygon points="29,65 37,61 45,65 45,73 37,77 29,73" fill="#4caf50" stroke="white" stroke-width="1"/>
+    <polygon points="45,65 53,61 61,65 61,73 53,77 45,73" fill="#f44336" stroke="white" stroke-width="1"/>
+    <polygon points="61,65 69,61 77,65 77,73 69,77 61,73" fill="#2196f3" stroke="white" stroke-width="1"/>
+    
+    <!-- Bottom row: 2 hexes - EMPTY -->
+    <polygon points="37,85 45,81 53,85 53,93 45,97 37,93" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
+    <polygon points="53,85 61,81 69,85 69,93 61,97 53,93" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
+  </g>
+  
+  <!-- Arrow pointing right -->
+  <g transform="translate(135, 90)">
+    <path d="M0,0 L20,0 M15,-5 L20,0 L15,5" stroke="#f44336" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- World Card (Right Side) -->
+  <g transform="translate(180, 20)">
+    <!-- World background -->
+    <rect width="100" height="140" fill="rgba(76, 175, 80, 0.3)" stroke="rgba(76, 175, 80, 0.6)" stroke-width="2" rx="8" ry="8"/>
+    <text x="50" y="15" text-anchor="middle" class="arcane-text" font-size="12" font-weight="bold" fill="white">PLANET</text>
+    
+    <!-- World hexagon pattern (3,4,5,4,3) - showing mismatched area -->
+    <!-- Row 1: 3 hexes -->
+    <polygon points="29,25 37,21 45,25 45,33 37,37 29,33" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <polygon points="45,25 53,21 61,25 61,33 53,37 45,33" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <polygon points="61,25 69,21 77,25 77,33 69,37 61,33" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    
+    <!-- Row 2: 4 hexes - MISMATCHED PATTERN (5 stones) -->
+    <polygon points="21,45 29,41 37,45 37,53 29,57 21,53" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <polygon points="37,45 45,41 53,45 53,53 45,57 37,53" fill="#2196f3" stroke="#f44336" stroke-width="2"/> <!-- WRONG: Should be fire but is water -->
+    <polygon points="53,45 61,41 69,45 69,53 61,57 53,53" fill="#4caf50" stroke="#f44336" stroke-width="2"/> <!-- WRONG: Should be water but is earth -->
+    <polygon points="69,45 77,41 85,45 85,53 77,57 69,53" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    
+    <!-- Row 3: 5 hexes - MISMATCHED PATTERN (5 stones) -->
+    <polygon points="13,65 21,61 29,65 29,73 21,77 13,73" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <polygon points="29,65 37,61 45,65 45,73 37,77 29,73" fill="#f44336" stroke="#f44336" stroke-width="2"/> <!-- WRONG: Should be earth but is fire -->
+    <polygon points="45,65 53,61 61,65 61,73 53,77 45,73" fill="#9c27b0" stroke="#f44336" stroke-width="2"/> <!-- OCCUPIED: Has purple stone -->
+    <polygon points="61,65 69,61 77,65 77,73 69,77 61,73" fill="#4caf50" stroke="#f44336" stroke-width="2"/> <!-- WRONG: Should be water but is earth -->
+    <polygon points="77,65 85,61 93,65 93,73 85,77 77,73" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    
+    <!-- Row 4: 4 hexes - NO MATCHING (empty portal positions) -->
+    <polygon points="21,85 29,81 37,85 37,93 29,97 21,93" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <polygon points="37,85 45,81 53,85 53,93 45,97 37,93" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <polygon points="53,85 61,81 69,85 69,93 61,97 53,93" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <polygon points="69,85 77,81 85,85 85,93 77,97 69,93" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    
+    <!-- Row 5: 3 hexes -->
+    <polygon points="29,105 37,101 45,105 45,113 37,117 29,113" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <polygon points="45,105 53,101 61,105 61,113 53,117 45,113" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <polygon points="61,105 69,101 77,105 77,113 69,117 61,113" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  </g>
+  
+  <!-- Red X below arrow -->
+  <g transform="translate(135, 110)">
+    <circle cx="10" cy="10" r="12" fill="#f44336" stroke="#c62828" stroke-width="2"/>
+    <path d="M6,6 L14,14 M14,6 L6,14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

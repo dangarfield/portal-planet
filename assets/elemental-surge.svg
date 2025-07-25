@@ -1,0 +1,63 @@
+<svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Elemental Surge Card Visual -->
+  <defs>
+    <radialGradient id="surgeBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#4caf50;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#8bc34a;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#2e7d32;stop-opacity:0.4" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="150" fill="url(#surgeBg)" rx="10" ry="10"/>
+  
+  <!-- Central energy burst -->
+  <circle cx="100" cy="75" r="40" fill="none" stroke="#66bb6a" stroke-width="3" opacity="0.8">
+    <animate attributeName="r" values="40;45;40" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="75" r="25" fill="none" stroke="#81c784" stroke-width="2" opacity="0.9">
+    <animate attributeName="r" values="25;30;25" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Energy particles -->
+  <circle cx="100" cy="75" r="3" fill="#a5d6a7" opacity="0.9">
+    <animate attributeName="r" values="3;6;3" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Radiating energy lines -->
+  <g stroke="#81c784" stroke-width="2" opacity="0.7">
+    <line x1="100" y1="35" x2="100" y2="25">
+      <animate attributeName="y2" values="25;20;25" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="135" y1="60" x2="145" y2="50">
+      <animate attributeName="x2" values="145;150;145" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="50;45;50" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="135" y1="90" x2="145" y2="100">
+      <animate attributeName="x2" values="145;150;145" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="100;105;100" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="100" y1="115" x2="100" y2="125">
+      <animate attributeName="y2" values="125;130;125" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="65" y1="90" x2="55" y2="100">
+      <animate attributeName="x2" values="55;50;55" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="100;105;100" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="65" y1="60" x2="55" y2="50">
+      <animate attributeName="x2" values="55;50;55" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="50;45;50" dur="2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Floating energy orbs -->
+  <circle cx="60" cy="40" r="2" fill="#a5d6a7" opacity="0.8">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="0,0;5,-5;0,0" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="140" cy="110" r="1.5" fill="#c8e6c9" opacity="0.7">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="0,0;-3,3;0,0" dur="4s" repeatCount="indefinite"/>
+  </circle>
+</svg>

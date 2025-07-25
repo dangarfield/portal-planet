@@ -1,0 +1,61 @@
+<svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fire Thief Card Visual -->
+  <defs>
+    <radialGradient id="fireThiefBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#d32f2f;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#f44336;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#b71c1c;stop-opacity:0.4" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="150" fill="url(#fireThiefBg)" rx="10" ry="10"/>
+  
+  <!-- Thief shadow figure -->
+  <path d="M100 40 Q90 35, 85 45 L85 60 Q80 65, 85 70 L85 90 Q90 95, 100 90 Q110 95, 115 90 L115 70 Q120 65, 115 60 L115 45 Q110 35, 100 40" 
+        fill="#424242" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.5;0.8" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Thief eyes -->
+  <circle cx="95" cy="50" r="2" fill="#f44336" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="105" cy="50" r="2" fill="#f44336" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Stolen fire stone -->
+  <circle cx="130" cy="60" r="8" fill="#ff5722" opacity="0.9" stroke="#ff8a65" stroke-width="1">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="0,0;-20,10;-40,20" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0.5;0.2" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Thief's grasping hand -->
+  <circle cx="110" cy="65" r="3" fill="#616161" opacity="0.8">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="0,0;10,-5;20,-10" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Dark energy swirls -->
+  <path d="M70 75 Q85 65, 100 75 Q115 85, 130 75" stroke="#424242" stroke-width="2" fill="none" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite"/>
+  </path>
+  <path d="M70 90 Q85 100, 100 90 Q115 80, 130 90" stroke="#424242" stroke-width="1.5" fill="none" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Menacing particles -->
+  <g fill="#d32f2f" opacity="0.7">
+    <circle cx="60" cy="50" r="1">
+      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="90" r="1.2">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="110" r="1">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

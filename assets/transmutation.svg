@@ -1,0 +1,53 @@
+<svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Transmutation Card Visual -->
+  <defs>
+    <radialGradient id="transmuteBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#9c27b0;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#ba68c8;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#6a1b9a;stop-opacity:0.4" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="150" fill="url(#transmuteBg)" rx="10" ry="10"/>
+  
+  <!-- Transformation circles -->
+  <circle cx="70" cy="75" r="20" fill="#f44336" opacity="0.8">
+    <animate attributeName="fill" values="#f44336;#2196f3;#4caf50;#f44336" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="130" cy="75" r="20" fill="#2196f3" opacity="0.8">
+    <animate attributeName="fill" values="#2196f3;#4caf50;#f44336;#2196f3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Transformation arrow -->
+  <path d="M95 75 L105 75" stroke="#e1bee7" stroke-width="3" fill="none">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="1s" repeatCount="indefinite"/>
+  </path>
+  <path d="M102 72 L105 75 L102 78" stroke="#e1bee7" stroke-width="2" fill="none">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Magical sparkles -->
+  <g fill="#ce93d8" opacity="0.9">
+    <circle cx="85" cy="60" r="1">
+      <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="115" cy="90" r="1.5">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="50" r="1">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="100" r="1.2">
+      <animate attributeName="opacity" values="1;0.4;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Energy swirls -->
+  <path d="M70 55 Q85 45, 100 55 Q115 65, 130 55" stroke="#e1bee7" stroke-width="1.5" fill="none" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M70 95 Q85 105, 100 95 Q115 85, 130 95" stroke="#e1bee7" stroke-width="1.5" fill="none" opacity="0.6">
+    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" repeatCount="indefinite"/>
+  </path>
+</svg>

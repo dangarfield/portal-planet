@@ -1,0 +1,67 @@
+<svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Elemental Harmony Card Visual -->
+  <defs>
+    <radialGradient id="harmonyBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#ff9800;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#ffb74d;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#f57c00;stop-opacity:0.4" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="150" fill="url(#harmonyBg)" rx="10" ry="10"/>
+  
+  <!-- Four elemental stones in harmony -->
+  <circle cx="70" cy="55" r="12" fill="#f44336" opacity="0.9">
+    <animate attributeName="cy" values="55;50;55" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="130" cy="55" r="12" fill="#2196f3" opacity="0.9">
+    <animate attributeName="cy" values="55;50;55" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="70" cy="95" r="12" fill="#4caf50" opacity="0.9">
+    <animate attributeName="cy" values="95;90;95" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="130" cy="95" r="12" fill="#ff9800" opacity="0.9">
+    <animate attributeName="cy" values="95;90;95" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Central harmony symbol -->
+  <circle cx="100" cy="75" r="20" fill="none" stroke="#fff3e0" stroke-width="2" opacity="0.8">
+    <animate attributeName="r" values="20;25;20" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="75" r="5" fill="#fff3e0" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.5;0.9" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Connecting energy lines -->
+  <g stroke="#ffcc02" stroke-width="1.5" opacity="0.7">
+    <line x1="70" y1="55" x2="100" y2="75">
+      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="130" y1="55" x2="100" y2="75">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="70" y1="95" x2="100" y2="75">
+      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="130" y1="95" x2="100" y2="75">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Harmony sparkles -->
+  <g fill="#fff8e1" opacity="0.8">
+    <circle cx="50" cy="75" r="1">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="75" r="1.2">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="40" r="1">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="110" r="1.5">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

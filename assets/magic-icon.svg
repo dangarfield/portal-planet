@@ -1,0 +1,101 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Magic/Portal Hexagon Icon -->
+  <defs>
+    <radialGradient id="magicBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#ab47bc;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#8e24aa;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#7b1fa2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a148c;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="magicFrame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd54f;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffb300;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff8f00;stop-opacity:1" />
+    </linearGradient>
+    <filter id="magicGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Outer hexagon frame -->
+  <polygon points="100,20 160,60 160,140 100,180 40,140 40,60" 
+           fill="url(#magicFrame)" stroke="#d4af37" stroke-width="3"/>
+  
+  <!-- Inner hexagon frame -->
+  <polygon points="100,30 150,65 150,135 100,170 50,135 50,65" 
+           fill="#8d6e63" stroke="#5d4037" stroke-width="2"/>
+  
+  <!-- Main magic hexagon -->
+  <polygon points="100,40 140,70 140,130 100,160 60,130 60,70" 
+           fill="url(#magicBg)" stroke="#7b1fa2" stroke-width="2"/>
+  
+  <!-- Inner hexagonal pattern -->
+  <polygon points="100,55 125,75 125,125 100,145 75,125 75,75" 
+           fill="none" stroke="#ce93d8" stroke-width="2" opacity="0.8"/>
+  
+  <!-- Central magic portal -->
+  <circle cx="100" cy="100" r="20" fill="none" stroke="#e1bee7" stroke-width="2" opacity="0.9">
+    <animate attributeName="r" values="20;25;20" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0.5;0.9" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="12" fill="none" stroke="#f8bbd9" stroke-width="1.5" opacity="0.8">
+    <animate attributeName="r" values="12;15;12" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="5" fill="#f3e5f5" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.4;0.9" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Magic sparkles -->
+  <g fill="#e1bee7" opacity="0.8">
+    <circle cx="80" cy="80" r="2">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="80" r="1.5">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="120" r="1.8">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="120" r="2.2">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Magic energy swirls -->
+  <path d="M85 85 Q100 80, 115 85 Q110 100, 115 115 Q100 120, 85 115 Q90 100, 85 85" 
+        stroke="#ce93d8" stroke-width="1.5" fill="none" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="rotate" 
+                      values="0 100 100;360 100 100" dur="8s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Floating magic orbs -->
+  <circle cx="70" cy="70" r="3" fill="#ba68c8" opacity="0.7">
+    <animateTransform attributeName="transform" type="rotate" 
+                      values="0 100 100;360 100 100" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="130" cy="130" r="2.5" fill="#ba68c8" opacity="0.6">
+    <animateTransform attributeName="transform" type="rotate" 
+                      values="0 100 100;-360 100 100" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="130" cy="70" r="2" fill="#ce93d8" opacity="0.8">
+    <animateTransform attributeName="transform" type="rotate" 
+                      values="0 100 100;360 100 100" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="70" cy="130" r="2.8" fill="#ce93d8" opacity="0.5">
+    <animateTransform attributeName="transform" type="rotate" 
+                      values="0 100 100;-360 100 100" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Hexagonal gems around border -->
+  <polygon points="100,50 108,58 108,68 100,76 92,68 92,58" fill="#ab47bc" opacity="0.7"/>
+  <polygon points="130,75 138,83 138,93 130,101 122,93 122,83" fill="#ab47bc" opacity="0.7"/>
+  <polygon points="130,125 138,117 138,107 130,99 122,107 122,117" fill="#ab47bc" opacity="0.7"/>
+  <polygon points="100,150 108,142 108,132 100,124 92,132 92,142" fill="#ab47bc" opacity="0.7"/>
+  <polygon points="70,125 78,117 78,107 70,99 62,107 62,117" fill="#ab47bc" opacity="0.7"/>
+  <polygon points="70,75 78,83 78,93 70,101 62,93 62,83" fill="#ab47bc" opacity="0.7"/>
+</svg>

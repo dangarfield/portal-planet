@@ -1,0 +1,87 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Water World Background -->
+  <defs>
+    <radialGradient id="waterWorldBg" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" style="stop-color:#1976d2;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#2196f3;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#03a9f4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d47a1;stop-opacity:1" />
+    </radialGradient>
+    <filter id="waterWorldGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#waterWorldBg)" rx="20" ry="20"/>
+  
+  <!-- Water runes/symbols around the border -->
+  <path d="M50 50 Q60 40, 70 50 Q60 60, 50 50" fill="#64b5f6" opacity="0.4"/>
+  <path d="M350 50 Q340 40, 330 50 Q340 60, 350 50" fill="#64b5f6" opacity="0.4"/>
+  <path d="M50 250 Q60 240, 70 250 Q60 260, 50 250" fill="#64b5f6" opacity="0.4"/>
+  <path d="M350 250 Q340 240, 330 250 Q340 260, 350 250" fill="#64b5f6" opacity="0.4"/>
+  
+  <!-- Central water pattern -->
+  <circle cx="200" cy="150" r="100" fill="none" stroke="#2196f3" stroke-width="2" opacity="0.3"/>
+  <circle cx="200" cy="150" r="80" fill="none" stroke="#42a5f5" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="200" cy="150" r="60" fill="none" stroke="#64b5f6" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Hexagonal water pattern in center -->
+  <polygon points="200,100 230,115 230,145 200,160 170,145 170,115" 
+           fill="none" stroke="#90caf9" stroke-width="1" opacity="0.6"/>
+  <polygon points="200,110 220,120 220,140 200,150 180,140 180,120" 
+           fill="none" stroke="#bbdefb" stroke-width="1" opacity="0.7"/>
+  
+  <!-- Floating water bubbles -->
+  <circle cx="100" cy="80" r="3" fill="#2196f3" opacity="0.7">
+    <animate attributeName="cy" values="80;75;80" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;0.4;0.7" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="100" r="2.5" fill="#42a5f5" opacity="0.6">
+    <animate attributeName="cy" values="100;95;100" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="220" r="2" fill="#64b5f6" opacity="0.8">
+    <animate attributeName="cy" values="220;215;220" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0.5;0.8" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="280" cy="200" r="3.5" fill="#2196f3" opacity="0.5">
+    <animate attributeName="cy" values="200;195;200" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Corner water wave decorative elements -->
+  <path d="M20 20 Q30 15, 40 20 Q30 25, 20 20" fill="#42a5f5" opacity="0.5"/>
+  <path d="M380 20 Q370 15, 360 20 Q370 25, 380 20" fill="#42a5f5" opacity="0.5"/>
+  <path d="M20 280 Q30 275, 40 280 Q30 285, 20 280" fill="#42a5f5" opacity="0.5"/>
+  <path d="M380 280 Q370 275, 360 280 Q370 285, 380 280" fill="#42a5f5" opacity="0.5"/>
+  
+  <!-- Water flow lines -->
+  <path d="M50 150 Q100 140, 150 150 Q200 160, 250 150 Q300 140, 350 150" 
+        stroke="#90caf9" stroke-width="2" fill="none" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M50 170 Q100 160, 150 170 Q200 180, 250 170 Q300 160, 350 170" 
+        stroke="#90caf9" stroke-width="1.5" fill="none" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Water droplets -->
+  <circle cx="180" cy="80" r="1" fill="#90caf9" opacity="0.6">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="0,0;3,8;0,0" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="220" cy="90" r="1.5" fill="#64b5f6" opacity="0.5">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="0,0;-5,10;0,0" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Border -->
+  <rect width="400" height="300" fill="none" stroke="#2196f3" stroke-width="3" rx="20" ry="20" opacity="0.8"/>
+</svg>
