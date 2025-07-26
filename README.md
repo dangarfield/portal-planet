@@ -1,6 +1,6 @@
 # Portal Planet
 
-> My son had an idea of the a board game, this was a quick way of validating and then creating the assets. Using mostlye Q for Developers, AWS Bedrock for images
+> My son had an idea of the a board game, this was a quick way of validating and then creating the assets. Using mostly Q for Developers, AWS Bedrock for images
 
 ![Portal Planet](icons/preview.png)
 
