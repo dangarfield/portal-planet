@@ -12,7 +12,7 @@
 
 ### How To Play
 - Capture treasure on a planet by surrounding it with  matching elemental crystals
-- use elemental crystals on your portals and transfer them onto the planets
+- Use elemental crystals on your portals and transfer them onto the planets
 - Match patterns to capture the treasures
 - See turn phases for details
 
@@ -23,7 +23,7 @@
 - 20 hex tiles of each (fire, water, earth)
 - 9 treasure gems
 - 30 elemental crystals (fire, water, earth)
-- 24 portal thief action cards
+- 25 portal thief action cards
 
 ### Setup
 - Place the 3 portal boards between the 3 planet boards
@@ -31,6 +31,7 @@
 - Place treasure gems on treasure tiles
 - Shuffle the portal thief action cards and place on the table
 - Place the 60 elemental crystals in a bag
+- Hard Mode: place the game over action card on the bottom of action pile
 
 ### Turn Phases
 
@@ -54,10 +55,7 @@
 | Correct Portal Placement | Incorrect Portal Placement |
 | :---: | :---: |
 | ![Correct Portal Placement](assets/portal-world-correct.svg) | ![Incorrect Portal Placement](assets/portal-world-incorrect.svg) |
-
-
 | Correct Treasure Capture | Incorrect Treasure Capture |
-| :---: | :---: |
 | ![Correct Treasure Capture](assets/treasure-capture-correct.svg) | ![Incorrect Treasure Capture](assets/treasure-capture-incorrect.svg) |
 
 
